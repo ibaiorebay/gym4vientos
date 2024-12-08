@@ -1,0 +1,21 @@
+<div class="activity-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Lugar</th>
+          <th>Monitor</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let activity of activities">
+          <td>{{ activity.date }}</td>
+          <td>{{ activity.location }}</td>
+          <td>{{ activity.monitor }}</td>
+          <td>{{ activity.type }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

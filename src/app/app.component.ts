@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterModule, MenuComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'gym4vientos';
-}
+export class AppComponent {}
